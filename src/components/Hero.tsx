@@ -39,7 +39,7 @@ const Hero = () => {
             className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-cyan-400 shadow-lg"
           >
             <img
-              src="/profile_picture.png"
+              src="profile_picture.png"
               alt="José Gómez"
               className="w-full h-full object-cover"
             />
