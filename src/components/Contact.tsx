@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin, ArrowDownToLineIcon } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -13,31 +13,46 @@ const Contact = () => {
         <span className="inline-block px-3 py-1 text-sm font-mono tracking-wider bg-cyan-500/10 rounded-full mb-6 border border-cyan-500/20">
           CONTACT INFORMATION
         </span>
-        <div className="space-y-6 mt-8">
+
+        {/* Two-column grid layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 max-w-lg mx-auto">
+          <motion.a
+            href="joseGomezSoftwareDeveloper.pdf"
+            download="joseGomezSoftwareDeveloper.pdf"
+            className="flex items-center space-x-3 text-white hover:text-cyan-400 transition-colors group"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            <ArrowDownToLineIcon className="w-5 h-5 group-hover:stroke-cyan-400" />
+            <span>Get a copy of my CV!</span>
+          </motion.a>
+
           <motion.a
             href="mailto:srsitogomez@gmail.com"
-            className="flex items-center justify-center space-x-3 text-gray-300 hover:text-cyan-400 transition-colors group"
+            className="flex items-center space-x-3 text-white hover:text-cyan-400 transition-colors group"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Mail className="w-5 h-5 group-hover:stroke-cyan-400" />
             <span>srsitogomez@gmail.com</span>
           </motion.a>
+
           <motion.a
             href="tel:+34625492411"
             rel="noopener noreferrer"
-            className="flex items-center justify-center space-x-3 text-gray-300 hover:text-cyan-400 transition-colors group"
+            className="flex items-center space-x-3 text-white hover:text-cyan-400 transition-colors group"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Phone className="w-5 h-5" />
             <span>+34 625 49 24 11</span>
           </motion.a>
+
           <motion.a
             href="https://www.linkedin.com/in/jos%C3%A9-g%C3%B3mez-sevillano-b70530177/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center space-x-3 text-gray-300 hover:text-cyan-400 transition-colors group"
+            className="flex items-center space-x-3 text-white hover:text-cyan-400 transition-colors group"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >

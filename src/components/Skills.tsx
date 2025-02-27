@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const skills = [
@@ -6,7 +5,7 @@ const skills = [
   "Determination",
   "Passion and attention to detail",
   "Creativity",
-  "Teamwork (both for learning and mentoring)"
+  "Teamwork (both for learning and mentoring)",
 ];
 
 const Skills = () => {
@@ -32,7 +31,7 @@ const Skills = () => {
             className="flex items-center space-x-3"
           >
             <div className="w-2 h-2 rounded-full bg-cyan-500" />
-            <p className="text-gray-300">{skill}</p>
+            <p className="text-white">{skill}</p>
           </motion.div>
         ))}
       </div>

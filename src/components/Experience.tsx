@@ -60,15 +60,15 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="relative pl-6 border-l-2 border-cyan-500/20 hover:border-cyan-500/50 transition-colors duration-300"
+            className="relative pl-6 border-l-2 border-sky-400 hover:border-violet-400 transition-colors duration-300"
           >
             <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-cyan-500/20 border-2 border-cyan-500/40" />
             <div>
               <h3 className="text-xl font-bold text-white mb-1">{exp.title}</h3>
-              <p className="text-sm font-mono text-cyan-300/60 mb-2">
+              <p className="text-sm font-mono text-white mb-2">
                 {exp.company} • {exp.period}
               </p>
-              <p className="text-gray-400">{exp.description}</p>
+              <p className="text-gray-200">{exp.description}</p>
             </div>
           </motion.div>
         ))}
